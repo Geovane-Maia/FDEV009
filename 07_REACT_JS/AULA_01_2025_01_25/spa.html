@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="#" onclick="pageHome()">Home</a>
+            <a href="#" onclick="pageContato()">Contato</a>
+        </li>
+    </ul>
+
+    <div id="root"></div>
+
+    
+    <script>
+        function pageHome() {
+            document.querySelector('#root').innerHTML = `<h1>Página Inicial</h1>`;
+        }
+
+        pageHome()
+
+        function pageContato() {
+            document.querySelector('#root').innerHTML = '<h1>Página de  Contato</h1>';
+        }
+    </script>
+</body>
+</html>

@@ -1,8 +1,9 @@
-function Header(){
-    return(
+function Header() {
+    return (
         <header>
             Cabeçalho
         </header>
     )
 }
+
 export default Header;
